@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css'
+
+import './css/jquery.simplecolorpicker.css'
+import './css/bootstrap-responsive.css'
+import './css/jquery.miniColors.css'
+import './css/bootstrap-responsive.min.css'
+
 import 'bootstrap/dist/js/bootstrap.bundle'
 export class App extends Component {
   render() {
