@@ -5,10 +5,17 @@ import './css/bootstrap-responsive.min.css'
 import './css/jquery.miniColors.css'
 import './css/jquery.simplecolorpicker.css'
 import './Editor.css'
+import $ from 'jquery';
 
 var Tshirt = require('./img/crew_front.png');
 
 export class Editor extends Component {
+  componentDidMount = () =>{
+    $('.color-preview').on( "click" , function(){
+      var color = $(this).css("background-color");
+      document.getElementById("shirtDiv").style.backgroundColor = color;		   
+    }); 
+      }
   render() {
     return (
       <div className="App">
@@ -168,7 +175,6 @@ export class Editor extends Component {
           </div>       
       </footer>
     </div>
-      
     )
   }
 }
